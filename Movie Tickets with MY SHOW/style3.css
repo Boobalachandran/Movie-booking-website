@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+   font-family: algerian;
+  background-color: brown;
+  color: #ffff00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1{
+  color: #ffff00 ;
+  text-decoration: none;
+}
+
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.seating-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  
+}
+
+.seat {
+  flex-basis: 20%;
+  padding: 10px;
+  border: 2px solid #008000;
+  cursor: pointer;
+  width: 10px;
+  height: 25px;
+  background-color: #3333;
+  border-radius: 5px;
+  
+}
+
+
+.seat.unavailable {
+  background-color: #FF0000;
+  cursor: not-allowed;
+}
+.seat-column {
+  display: grid;
+  gap: 10px;
+  float: left;
+  margin-right: 1000px;
+}
+
+.seats {
+  flex-basis: 2000%;
+  padding: 5px;
+  border: 2px solid #008000;
+  cursor: pointer;
+  width: 4px;
+  height: 4px;
+  background-color: #3333;
+  border-radius: 5px;
+}
+
+.seats.unavailable {
+  background-color: #FF0000;
+ 
+}
+.seats span {
+  
+  margin-left: 25px;
